@@ -9,3 +9,8 @@ import { fetchCountries } from './fetchCountries';
 
 
 const DEBOUNCE_DELAY = 300;
+
+// Notiflix.Notify.info("Too many matches found. Please enter a more specific name.")
+
+
+// Notiflix.Notify.success("Oops, there is no country with that name")

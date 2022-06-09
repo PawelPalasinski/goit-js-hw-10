@@ -1,3 +1,3 @@
-export function fetchCountries() {
-    
+export function fetchCountries(name) {
+
 }
