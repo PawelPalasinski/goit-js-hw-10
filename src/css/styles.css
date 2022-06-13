@@ -18,3 +18,11 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+ul { 
+  list-style: none;
+}
+
+img {
+  width: 50px;
+}
