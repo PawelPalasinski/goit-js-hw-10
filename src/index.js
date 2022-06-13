@@ -37,7 +37,7 @@ function countriesData(data) {
     Notiflix.Notify.info(
       'Too many matches found. Please enter a more specific name.'
     );
-  } else if (data.length > 2 && data.length <= 10) {
+  } else if (data.length > 1 && data.length <= 10) {
     clearData(countryList);
     clearData(countryInfo);
 
@@ -87,3 +87,6 @@ searchBox.addEventListener('input', debounce(searchCountry, DEBOUNCE_DELAY));
 function clearData(output) {
   output.innerHTML = '';
 }
+
+searchBox.insertAdjacentHTML('beforebegin', '<h1>Country Finder</h1>');
+document.querySelector('#search-box').placeholder = 'Search for any country...';

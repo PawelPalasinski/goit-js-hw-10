@@ -7,22 +7,92 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
-  color: #212121;
+  background-color: rgba(120, 120, 120, 1);
+  background-image: linear-gradient(
+    90deg,
+    rgba(120, 120, 120, 1) 0%,
+    rgba(0, 0, 0, 1) 30%,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(120, 120, 120, 1) 100%
+  );
   line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #search-box {
   font: inherit;
   padding: 8px;
-  max-width: 320px;
-  margin-bottom: 16px;
+  width: 200px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  transition: transform, 1.2s;
 }
 
-ul { 
+#search-box:hover,
+#search-box:focus {
+  width: 400px;
+}
+
+ul {
   list-style: none;
+  width: 400px;
+  padding-left: 0;
 }
 
-img {
-  width: 50px;
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+li > img {
+  height: 50px;
+}
+
+div > img {
+  width: 300px;
+  display: block;
+  margin: auto;
+  padding: 15px;
+}
+
+div.country,
+ul {
+  width: 400px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  color: whitesmoke;
+}
+
+.country-body {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  margin-left: 30px;
+}
+
+.country-body > h3 {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 50px;
+  text-shadow: 4px 4px 0px whitesmoke;
+  mix-blend-mode: screen;
+  animation: fadeIn 3s linear forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
