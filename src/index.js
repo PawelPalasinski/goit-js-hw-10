@@ -88,5 +88,8 @@ function clearData(output) {
   output.innerHTML = '';
 }
 
-searchBox.insertAdjacentHTML('beforebegin', '<h1>Country Finder</h1>');
+searchBox.insertAdjacentHTML(
+  'beforebegin',
+  '<header><h1>Country Finder</h1></header>'
+);
 document.querySelector('#search-box').placeholder = 'Search for any country...';
